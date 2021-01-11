@@ -1,0 +1,59 @@
+
+<div class="login-box">
+  <img src="/css/logo_0.36571100 1592896939.png" alt="show" class="avatar" />
+  <%- include ("./partials/messages"); %>
+  
+
+  <div class="tab-content">
+    <form action="/users/login" class="form" id="login">
+      <div class="form__message form__message--error"></div>
+      <div class="textbox">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <input
+          type="email"
+          id="email"
+          autofocus
+          placeholder="Enter Email"
+          name="email"
+    
+        />
+      </div>
+
+      <div class="textbox">
+        <i class="fa fa-lock" aria-hidden="true"></i>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter Password"
+          name="password"
+     
+        />
+      </div>
+
+      <div class="remember_me">
+        <input type="checkbox" id="remember_me" />
+        <label for="remember_me">Remember me</label>
+      </div>
+
+      <p class="form__text">
+        <a href="#" class="form__link">Forgot password</a>
+      </p>
+
+      <p class="form__text">
+        <a id="linkCreateAccount" href="/users/register" class="form__link"
+          >Don't have an account? Create account</a
+        >
+      </p>
+
+      <button class="btn" type="submit">
+        <b>Sign-In</b>
+      </button>
+      <p class="form__text">
+        <a id="" href="./" class="form__assistance"
+          >Contact for Assistance</a
+        >
+      </p>
+    </form>
+    
+  </div>
+</div>
